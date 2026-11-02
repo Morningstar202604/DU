@@ -5,3 +5,8 @@ dist/
 .DS_Store
 .vscode/
 .idea/
+test-results/
+playwright-report/
+# 本地临时文件（截图比对、调试导出等），不进版本库
+.tmp-shots/
+.tmp-*.json
