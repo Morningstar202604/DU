@@ -25,7 +25,7 @@ jobs:
     # CI 的运行时必须是确定的，不能随 GitHub 换镜像而变。
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: actions/setup-node@v4
         with:
           node-version: '22.14'  # node:sqlite 需要 22.5+
@@ -41,7 +41,7 @@ jobs:
     name: Playwright E2E
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: pnpm/action-setup@v4
         with:
           version: 10.32.1
